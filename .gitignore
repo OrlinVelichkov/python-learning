@@ -1,0 +1,15 @@
+# PyCharm / JetBrains
+.idea/
+
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+# Course folders
+Programming Basics with Python*/
+Programming Fundamentals with Python*/
+My software/
+*.txt
