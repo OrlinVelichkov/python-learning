@@ -1,4 +1,4 @@
-#28.08.2026 - 19:15h
+#18.08.2026 - 19:15h
 # 🔥 Stage 12 — Final Integration / Boss Fight
 products = [
     ["Laptop Pro", "Electronics", 1499, 8, 4.8],
