@@ -1,0 +1,70 @@
+# List Consolidation Review
+# Stage 9A — Built-ins
+number = [1, 2, 3, 4, 5]
+result = list(map(str,number))
+print(result)
+
+def double(number):
+    return number * 2
+result2 = list(map(double, number))
+print(result2)
+# Mission 1 — map() Conversion
+def integer(number):
+    return int(number)
+numbers = ["10", "20", "30", "40"]
+new_list = list(map(int, numbers))
+new_list2 = list(map(integer, numbers))
+print(new_list)
+print(new_list2)
+# Mission 2 — map() Transformation
+numbers = [1, 2, 3, 4]
+def triple(number):
+    return number * 3
+new_triple_list = list(map(triple, numbers))
+new_triple_list_lambda = list(map(lambda number: number *3, numbers))
+print(new_triple_list)
+print(new_triple_list_lambda)
+# Mission 3 — any()
+scores = [45, 58, 61, 72, 39]
+result3 = any(score >= 70 for score in scores)
+print(result3)
+# Mission 4 — all()
+ages = [22, 31, 19, 45, 18]
+result4 = all(age >= 18 for age in ages)
+print(result4)
+# Mission 5 — any() vs all()
+prices = [120, 80, 250, 300, 20]
+result5_any = any(price > 200 for price in prices)
+result5_all = all(price > 50 for price in prices)
+print(result5_any)
+print(result5_all)
+
+def above50(number):
+    if number >= 50:
+        return number
+def above200(number):
+    if number >= 200:
+        return number
+
+new_way = list(filter(above50, prices))
+print(f"Имаме числа по големи от 50: {new_way}")
+new_way2 = list(filter(above200, prices))
+print(f"Имаме числа по големи от 200: {new_way2}")
+
+groups_numbers = [[10, 20, 33], [9, 50, 60], [9, 80, 90]]
+report = any(all(num >= 10 for num in group) for group in groups_numbers)
+print(report)
+# Mission 6 — Type Awareness
+numbers = ["1", "2", "3"]
+mapped_numbers = map(int, numbers)
+converted_numbers = list(map(int, numbers))
+print(type(mapped_numbers))
+print(type(converted_numbers))
+# Mission 7 — Stage 9A Mini Checkpoint
+values = ["5", "12", "0", "25", "8"]
+integer_numbers = list(map(int, values))
+result_any = any(number > 20 for number in integer_numbers)
+result_all = all(number >= 0 for number in integer_numbers)
+print(f'Converted: {integer_numbers}')
+print(f'Any > 20: {result_any}')
+print(f'All >= 0: {result_all}')
