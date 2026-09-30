@@ -72,7 +72,7 @@ print(data)
 key = 'price'
 data[key] = 200
 print(data)
-# 🔥 Mission 10 — Stage 3 Mini Checkpoint
+# 🔥 Mission 10 — Stage 3 Mini Checkpoint.
 product = {
     "name": "Mechanical Keyboard",
     "price": 80,
