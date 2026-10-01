@@ -1,4 +1,4 @@
-#Dictionaries — Stage 4: Removing Dictionary Data
+#Dictionaries — Stage 4: Removing Dictionary Data.
 # 🥊 Mission 1 — Remove with del
 my_dict = {"name": "Alice", "age": 25, "city": "New York"}
 del my_dict["age"]
