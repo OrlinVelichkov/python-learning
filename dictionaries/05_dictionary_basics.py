@@ -116,3 +116,4 @@ print(f"Ключа е: {key}, а стойността е :{value}")
 product["active"] = True
 print(keys_view)
 print(keys_list)
+#
