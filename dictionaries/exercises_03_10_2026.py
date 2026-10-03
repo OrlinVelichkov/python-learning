@@ -229,3 +229,4 @@ print(value)
 product["active"] = True
 print(keys_view)
 print(keys_list)
+# End of exercises
