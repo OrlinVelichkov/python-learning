@@ -86,3 +86,4 @@ for key, value in inventory.items():
 for key in inventory.keys():
     inventory[key] += 1
 print(inventory)
+#
